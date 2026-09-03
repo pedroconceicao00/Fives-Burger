@@ -1,0 +1,84 @@
+:root{
+    --color-primary: #FF8A00;       /* Laranja */
+    --color-background: #0D0D0D;    /* Preto */
+    --color-surface: #1A1A1A;       /* Cinza quase preto */
+    --color-cream: #F5E2BF;         /* Creme */
+    --color-text: #FFFFFF;          /* Branco */
+
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--color-surface);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    margin: 0;
+    padding: 0px 30px 0px 0px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 200ms;
+}
+
+header nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.btn-ver-cardapio{
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+
+}
+
+.btn-ver-cardapio:hover{
+    background-color: var(--color-text);
+    color: var(--color-primary);
+}
+
+span{
+    color: var(--color-primary);
+}
+
+
+
+
