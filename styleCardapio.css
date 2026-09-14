@@ -1,0 +1,57 @@
+:root {
+    --color-primary: #FF8A00; /* Laranja */
+    --color-background: #0D0D0D; /* Preto */
+    --color-surface: #1A1A1A; /* Cinza quase preto */
+    --color-cream: #F5E2BF; /* Creme */
+    --color-text: #FFFFFF; /* Branco */
+
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--color-surface);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    margin: 0;
+    padding: 0px 30px 0px 0px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 200ms;
+}
+header nav ul li a:hover {
+  color: var(--color-primary);
+}
+main {
+    padding-left: 20px;
+    margin-left: 10vw;
+}
+.cardapio {
+    background-color: var(--color-cream);
+    color: var(--color-background);
+    width: 65vw;
+    padding-left: 20px;
+}
+.title {
+    text-align: center;
+}
