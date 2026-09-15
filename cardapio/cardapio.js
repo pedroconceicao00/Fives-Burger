@@ -8,9 +8,9 @@ async function carregarProdutos(){
             throw new Error(`Não possivel carregar as infomrações. Erro: ${resposta.status}`);
         }
 
-        const lanches = await resposta.json();
+        const dados = await resposta.json();
 
-        lanches.forEach(lanche => {
+        dados.lanches.forEach(lanche => {
             const cardLanche = document.createElement('div');
             cardLanche.classList.add('lanche');
 
@@ -18,7 +18,7 @@ async function carregarProdutos(){
             nomeLanche.textContent = lanche.nome;
 
             const imagemLanche = document.createElement('img');
-            imagemLanche.src = lanche.Imagem;
+            imagemLanche.src = lanche.imagem;
             imagemLanche.alt = lanche.nome;
 
             const precoLanche = document.createElement('p');
@@ -42,3 +42,5 @@ async function carregarProdutos(){
             containerProdutos.textContent = "Erro ao carregar os produtos.";
     }
 }
+
+carregarProdutos();

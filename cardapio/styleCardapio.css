@@ -61,7 +61,7 @@ header nav ul li a:hover {
 .selectionMenu{
     padding:10px; 
     border-spacing: 10px;
-    cursor: none;  /* <-- é possivel alterar o cursor para imagens*/
+    cursor: none;  /* <-- é possivel alterar o cursor para imagens, to com uma ideia maluca*/
     width: 80px;
     height: 30px;
 }
