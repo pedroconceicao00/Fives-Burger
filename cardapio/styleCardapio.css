@@ -86,3 +86,19 @@ header nav ul li a:hover {
     border-radius: 10px;
     background-color: #1A1A1A;
 }
+
+.lanche img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.lanche h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.lanche p{
+    font-size: 16px;
+    margin: 5px 0;
+}

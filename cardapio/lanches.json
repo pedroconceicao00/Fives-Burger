@@ -1,0 +1,25 @@
+{
+    "lanches": [
+        {
+            "id": 1,
+            "nome": "X-Burguer",
+            "descricao": "Pão, hambúrguer de carne, queijo e molho especial",
+            "preco": 9.99,
+            "Imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGHHuJ6AZ2S7aZ46rSCAoWADOJp_HiR69eIM9Xp6GL14_dbx4suqE4ho7&s=10"
+        },
+        {
+                "id": 2,
+                "nome": "X-Burguer",
+                "descricao": "Pão, hambúrguer de carne, queijo e molho especial",
+                "preco": 9.99,
+                "Imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGHHuJ6AZ2S7aZ46rSCAoWADOJp_HiR69eIM9Xp6GL14_dbx4suqE4ho7&s=10"
+        },
+        {
+                "id": 3,
+                "nome": "X-Burguer",
+                "descricao": "Pão, hambúrguer de carne, queijo e molho especial",
+                "preco": 9.99,
+                "Imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGHHuJ6AZ2S7aZ46rSCAoWADOJp_HiR69eIM9Xp6GL14_dbx4suqE4ho7&s=10"
+        }
+        ]
+}
