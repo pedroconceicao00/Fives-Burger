@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="styleCardapio.css" >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
@@ -21,34 +21,35 @@
   <body>
     <header>
       <nav>
-        <img
-          src="../assets/Fives-Burger-Logo.png"
-          alt="Five's Burger Logo"
-          width="120"
-        >
-        <ul>
-          class="logo"
-        >
+        <!-- Logo -->
+          <img
+            src="../assets/Fives-Burger-Logo.png"
+            alt="Five's Burger Logo"
+            width="120"
+            class="logo"
+          >
 
-        <!-- Botão hambúrguer do topo (só aparece no mobile) -->
-        <button
-          class="menu-toggle"
-          aria-label="Abrir menu de navegação"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <!-- Botão hambúrguer do topo (só aparece no mobile) -->
+          <button
+            class="menu-toggle"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-        <!-- Menu principal - vira carrossel no mobile -->
-        <ul class="nav-links">
-          <li id="inicio"><a href="../index.html">Início</a></li>
-          <li id="navCardapio">
-            <a href="cardapio.html" style="color: var(--color-primary)">Cardápio</a>
-          </li>
-          <li id="sobre"><a href="../sobre.html">Sobre</a></li>
-          <li id="contato"><a href="../index.html">Contato</a></li>
+          <!-- Menu principal - vira carrossel no mobile -->
+          <ul class="nav-links">
+            <li id="inicio"><a href="../index.html">Início</a></li>
+            <li id="navCardapio">
+              <a href="cardapio.html" style="color: var(--color-primary)"
+                >Cardápio</a
+              >
+            </li>
+            <li id="sobre"><a href="../sobre.html">Sobre</a></li>
+            <li id="contato"><a href="../index.html">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +61,7 @@
       </button>
 
       <!-- Menu lateral de categorias (oculto no mobile) -->
-      <aside id="menuCard" name="menuCard">
+      <aside id="menuCard">
         <div class="selectionMenu fechar-menu">✕ Fechar</div>
         <div class="selectionMenu ativo">Todos</div>
         <div class="selectionMenu">Combos</div>
@@ -70,14 +71,13 @@
       </aside>
 
       <!-- Grade de produtos -->
-      <article id="produtos" name="produtos"></article>
+      <div id="produtos"></div>
     </main>
 
-    
     <div class="overlay" id="overlay"></div>
 
     <footer></footer>
-    
+
     <script src="cardapio.js"></script>
   </body>
 </html>
