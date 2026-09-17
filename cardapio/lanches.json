@@ -2,31 +2,45 @@
     "lanches": [
         {
             "id": 1,
-            "nome": "X-Burguer",
-            "descricao": "Pão, hambúrguer de carne, queijo e molho especial",
+            "nome": "Five Classic",
+            "descricao": "Pão, hambúrguer de carne, queijo, alface, tomate, cebola, picles e molho especial",
             "preco": 9.99,
-            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGHHuJ6AZ2S7aZ46rSCAoWADOJp_HiR69eIM9Xp6GL14_dbx4suqE4ho7&s=10"
+            "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/Gemini_Generated_Image_%20(4).png"
         },
         {
                 "id": 2,
-                "nome": "X-Burguer",
-                "descricao": "Pão, hambúrguer de carne, queijo e molho especial",
+                "nome": "Five Chicken",
+                "descricao": "Pão, frango, queijo, alface, tomate, cebola e molho especial",
                 "preco": 9.99,
-                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGHHuJ6AZ2S7aZ46rSCAoWADOJp_HiR69eIM9Xp6GL14_dbx4suqE4ho7&s=10"
+                "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/Gemini_Generated_Image_%20(3).png"
         },
         {
                 "id": 3,
-                "nome": "X-Burguer",
-                "descricao": "Pão, hambúrguer de carne, queijo e molho especial",
+                "nome": "Five Classic Double",
+                "descricao": "Pão, 2 hambúrguer de carne, queijo, alface, tomate, cebola, picles e molho especial",
                 "preco": 9.99,
-                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGHHuJ6AZ2S7aZ46rSCAoWADOJp_HiR69eIM9Xp6GL14_dbx4suqE4ho7&s=10"
+                "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/Gemini_Generated_Image_%20(1).png"
         },
         {
                 "id":4,
-                "nome":"X-Burguer",
-                "descricao":"Pão, hambúrguer de carne, queijo e molho especial",
+                "nome":"Five Tropic",
+                "descricao":"Pão, Discos de Pernil ao molho teriyaki, queijo, salada tropicais e molho especial",
                 "preco":9.99,
-                "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGHHuJ6AZ2S7aZ46rSCAoWADOJp_HiR69eIM9Xp6GL14_dbx4suqE4ho7&s=10"
+                "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/Gemini_Generated_Image_sganqdsganqdsgan.jpg"
+        },
+        {
+                "id":5,
+                "nome":"Five Burguer",
+                "descricao":"Pão, hambúrguer de carne e queijo",
+                "preco":9.99,
+                "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/Gemini_Generated_Image_3m7do53m7do53m7d.jpg"
+        },
+        {
+                "id":6,
+                "nome":"Five Bacon",
+                "descricao":"Pão, hambúrguer de carne, queijo, bacon, alface, tomate e cebola",
+                "preco":9.99,
+                "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/Gemini_Generated_Image_3q48e23q48e23q48.jpg"
         }
 
         ]

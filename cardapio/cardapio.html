@@ -1,32 +1,51 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Five's Burger</title>
 
-    <link rel="stylesheet" href="styleCardapio.css" />
+    <link rel="stylesheet" href="styleCardapio.css" >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin="use-credentials"
-    />
+    >
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
-    />
+    >
   </head>
   <body>
     <header>
       <nav>
         <img
-          src="../assets/Fives Burger - Logo1536x1024.png"
+          src="../assets/Fives-Burger-Logo.png"
           alt="Five's Burger Logo"
           width="120"
+<<<<<<< Updated upstream
         />
         <ul>
+=======
+          class="logo"
+        >
+
+        <!-- Botão hambúrguer do topo (só aparece no mobile) -->
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Menu principal - vira carrossel no mobile -->
+        <ul class="nav-links">
+>>>>>>> Stashed changes
           <li id="inicio"><a href="../index.html">Início</a></li>
           <li id="navCardapio">
             <a href="cardapio.html" style="color: var(--color-primary)"
@@ -40,12 +59,25 @@
     </header>
 
     <main id="cardapio">
+<<<<<<< Updated upstream
       <section id="menuCard" name="menuCard">
         <div class="selectionMenu">Todos</div>
+=======
+      <!-- Botão para abrir/fechar categorias (só mobile) -->
+      <button id="menuExpand" aria-expanded="false" aria-controls="menuCard">
+        <span class="icon">☰</span> Categorias
+      </button>
+
+      <!-- Menu lateral de categorias (oculto no mobile) -->
+      <aside id="menuCard">
+        <div class="selectionMenu fechar-menu">✕ Fechar</div>
+        <div class="selectionMenu ativo">Todos</div>
+>>>>>>> Stashed changes
         <div class="selectionMenu">Combos</div>
         <div class="selectionMenu">Porções</div>
         <div class="selectionMenu">Bebidas</div>
         <div class="selectionMenu">Sobremesa</div>
+<<<<<<< Updated upstream
       </section>
       <article id="produtos" name="produtos"></article>
 
@@ -53,5 +85,18 @@
     </main>
 
     <footer></footer>
+=======
+      </aside>
+
+      <!-- Grade de produtos -->
+      <div id="produtos"></div>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer></footer>
+
+    <script src="cardapio.js"></script>
+>>>>>>> Stashed changes
   </body>
 </html>
