@@ -1,0 +1,381 @@
+x   
+.contact-section {
+  padding: 100px 20px;
+
+  /* Preto semelhante ao fundo da logo */
+  background: #050505;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* detalhe laranja no fundo */
+
+.contact-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  background: #ff7800;
+
+  opacity: 0.07;
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  top: -150px;
+  right: -100px;
+
+  pointer-events: none;
+}
+
+
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+/* texto */
+
+.contact-tag {
+
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #ff7800;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+.contact-content h2 {
+
+  margin: 0 0 20px;
+
+  color: #fffaf0;
+
+  font-size: clamp(38px, 5vw, 56px);
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+
+.contact-content p {
+
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #b8b8b8;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* cards*/
+
+.contact-options {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+.contact-card {
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 23px;
+
+  background: #111111;
+
+  border: 1px solid #292929;
+
+  border-radius: 20px;
+
+  color: #fffaf0;
+
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.contact-card:hover {
+
+  transform: translateY(-5px);
+
+  background: #151515;
+
+  border-color: #ff7800;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(255, 120, 0, 0.08);
+}
+
+
+/* icone */
+
+.contact-icon {
+
+  width: 58px;
+
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 16px;
+}
+
+
+.contact-icon svg {
+
+  width: 29px;
+
+  height: 29px;
+
+  fill: currentColor;
+}
+
+
+/* WhatsApp */
+
+.whatsapp-icon {
+
+  color: #ff7800;
+
+  background: rgba(255, 120, 0, 0.12);
+
+  border: 1px solid rgba(255, 120, 0, 0.2);
+}
+
+
+/* E-mail */
+
+.email-icon {
+
+  color: #ff7800;
+
+  background: rgba(255, 120, 0, 0.12);
+
+  border: 1px solid rgba(255, 120, 0, 0.2);
+}
+
+
+/* informação */
+
+.contact-info {
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+.contact-info span {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #ff7800;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+}
+
+
+.contact-info strong {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #fffaf0;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+.contact-info small {
+
+  display: block;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+
+/* seta */
+
+.contact-arrow {
+
+  color: #666;
+
+  font-size: 24px;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.contact-card:hover .contact-arrow {
+
+  transform: translateX(5px);
+
+  color: #ff7800;
+}
+
+
+/* destaque */
+
+.whatsapp-card {
+
+  border-color: rgba(255, 120, 0, 0.35);
+}
+
+
+.whatsapp-card::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 100%;
+
+  background: #ff7800;
+
+  border-radius: 10px;
+}
+
+
+/* mobile */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+
+    padding: 70px 20px;
+
+  }
+
+
+  .contact-container {
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+  }
+
+
+  .contact-content h2 {
+
+    font-size: 40px;
+
+    letter-spacing: -1px;
+
+  }
+
+
+  .contact-content p {
+
+    font-size: 16px;
+
+  }
+
+
+  .contact-card {
+
+    padding: 18px;
+
+  }
+
+
+  .contact-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+  }
+
+
+  .contact-info strong {
+
+    font-size: 15px;
+
+  }
+
+
+  .contact-info small {
+
+    font-size: 12px;
+
+  }
+
+}
+
