@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Five's Burger</title>
 
-    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="/index/stylesIndex.css" >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="use-credentials"
-    >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -40,19 +34,16 @@
     <main>
       <div class="hero">
         <div class="texto-principal">
-          <h1>O Hambúrger que você <span>Merece!</span></h1>
+          <h1>O Hambúrger que você <span class="destaque"><br>Merece!</span></h1>
 
           <p>
-            lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Hambúrgueres artesanais, feitos na hora com ingredientes selecionados para garantir o máximo sabor em cada mordida.
           </p>
 
           <button class="btn-ver-cardapio">Ver Cardápio</button>
         </div>
 
-        <video autoplay muted loop playsinline>
-          <source src="assets/HamburgerRodandoLoop.mp4" type="video/mp4" >
-        </video>
+        <img src="/assets/HeroHamburger1536x1024.png" alt="Hambúrguer" width="500">
       </div>
 
       <section class="produtos-destaque">
@@ -116,8 +107,74 @@
           <p>Refrigerante de cola, ideal para acompanhar seu hambúrguer.</p>
         </div>
       </section>
+
+      <section class="diferenciais">
+        <div class="titulo-diferenciais">
+          <p>Por que escolher a Five's Burger?</p>
+          <h2>Nossos <span class="destaque">Diferenciais</span></h2>
+        </div>
+
+        <div class="diferenciais-container">
+          <article class="diferencial">
+              <i data-lucide="flame" class="diferencial-icon"></i>
+
+              <h3>Receitas Artesanais</h3>
+
+              <p>
+                  Feitas com ingredientes selecionados.
+              </p>
+          </article>
+
+          <article class="diferencial">
+              <i data-lucide="clock" class="diferencial-icon"></i>
+
+              <h3>Grelhado na hora</h3>
+
+              <p>
+                  Mais sabor e suculência em cada mordida.
+              </p>
+          </article>
+
+          <article class="diferencial">
+              <i data-lucide="leaf" class="diferencial-icon"></i>
+
+              <h3>Ingredientes frescos</h3>
+
+              <p>
+                  Qualidade e cuidado em cada detalhe.
+              </p>
+          </article>
+
+          <article class="diferencial">
+              <i data-lucide="heart" class="diferencial-icon"></i>
+
+              <h3>Feito com paixão</h3>
+
+              <p>
+                  Porque você merece o melhor.
+              </p>
+          </article>
+        </div>
+
+    </section>
+
+    <section class="cta-section">
+      <p>Bateu a fome?</p>
+      <h2>Faça seu pedido <span class="destaque">agora!</span></h2>
+      <p>É rápido, fácil e delicioso!</p>
+
+      <a href="/cardapio/cardapio.html" class="btn-fazer-pedido">FAZER PEDIDO
+        <i data-lucide="move-right" class="btn-icon"></i>
+      </a>
+    </section>
+
     </main>
 
     <footer></footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
   </body>
 </html>
