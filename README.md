@@ -1,7 +1,5 @@
 # Fives Burger
 
-🍔 Five's Burger
-
 O Five's Burger é um projeto de website desenvolvido para uma hamburgueria, criado com o objetivo de apresentar a marca, seus produtos e sua identidade visual de forma moderna, atrativa e responsiva.
 
 O projeto busca proporcionar uma experiência agradável ao usuário, permitindo que ele conheça a história da Five's Burger, navegue pelo cardápio, visualize informações sobre os produtos e encontre facilmente os canais de contato da hamburgueria.
@@ -12,7 +10,7 @@ O principal objetivo do projeto é desenvolver uma presença digital para a Five
 
 Além de funcionar como uma vitrine digital, o site foi pensado para transmitir a identidade da marca através de elementos visuais, cores, tipografia, imagens e animações.
 
-📌 Páginas do projeto
+# 📌 Páginas do projeto
 
 🏠 Início
 
@@ -40,7 +38,7 @@ A página de contato reúne as principais formas de comunicação com a Five's B
 
 A estrutura foi desenvolvida para ser simples, organizada e responsiva, permitindo que as informações sejam acessadas tanto em computadores quanto em dispositivos móveis.
 
-🎨 Identidade visual
+# 🎨 Identidade visual
 
 A identidade visual do projeto utiliza principalmente preto, laranja e branco, criando uma aparência moderna e marcante.
 
@@ -48,7 +46,7 @@ O laranja é utilizado como cor de destaque para representar energia, sabor e pe
 
 A identidade também conta com elementos relacionados ao universo das hamburguerias, como hambúrgueres, utensílios e detalhes gráficos.
 
-🛠️ Tecnologias utilizadas
+# 🛠️ Tecnologias utilizadas
 
 O projeto foi desenvolvido utilizando tecnologias fundamentais para desenvolvimento web:
 
