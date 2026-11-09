@@ -1120,3 +1120,46 @@ span {
         font-size: 19px;
     }
 }
+
+
+
+
+
+/* ===== SCROLLBAR - FIVE'S BURGER ===== */
+
+/* Largura da barra */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background: #0b0b0b;
+}
+
+/* Parte que desliza */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        #ff9d00 0%,
+        #ff7800 50%,
+        #e85d00 100%
+    );
+
+    border-radius: 10px;
+
+    border: 2px solid #0b0b0b;
+
+    box-shadow:
+        0 0 8px rgba(255, 126, 0, 0.7),
+        0 0 15px rgba(255, 126, 0, 0.35);
+}
+
+/* Quando passa o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff9800;
+
+    box-shadow:
+        0 0 10px rgba(255, 126, 0, 0.9),
+        0 0 20px rgba(255, 126, 0, 0.5);
+}
