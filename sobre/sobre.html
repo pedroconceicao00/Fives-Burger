@@ -2,147 +2,244 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Five's Burger</title>
+    <title>Sobre | Five's Burger</title>
 
-    <!-- CSS principal -->
     <link rel="stylesheet" href="../styles.css">
-
-    <!-- CSS exclusivo da página Sobre -->
     <link rel="stylesheet" href="styleSobre.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
     <header>
-
         <nav>
-
             <img src="../assets/Fives Burger-Logo1536x1024.png" alt="Five's Burger Logo" width="120">
 
             <ul>
                 <li id="inicio"><a href="../index.html">Início</a></li>
                 <li id="cardapio"><a href="../cardapio/cardapio.html">Cardápio</a></li>
                 <li id="sobre"><a href="sobre.html" style="color: var(--color-primary);">Sobre</a></li>
-                <li id="contato"><a href="../contato.html">Contato</a></li>
+                <li id="contato"><a href="../contato/contato.html">Contato</a></li>
             </ul>
-
         </nav>
-
     </header>
 
+    <main class="sobre-page">
 
-    <main class="sobre-container">
-
+        <!-- HERO -->
         <section class="sobre-hero">
-
-            <div class="sobre-texto">
-
-                <span class="sobre-subtitulo">
-                    SOBRE NÓS
-                </span>
+            <div class="sobre-hero-content reveal">
+                <span class="eyebrow">CONHEÇA A FIVE'S BURGER</span>
 
                 <h1>
-                    Muito mais que um hambúrguer.
+                    Sabor que começa<br>
+                    <span>na essência.</span>
                 </h1>
 
                 <p>
-                    A Five's Burger nasceu com o objetivo de oferecer
-                    hambúrgueres saborosos, preparados com ingredientes
-                    de qualidade e muito cuidado em cada detalhe.
+                    Mais do que preparar hambúrgueres, a Five's Burger busca
+                    transformar cada pedido em uma experiência marcante,
+                    unindo sabor, cuidado e personalidade em cada detalhe.
                 </p>
 
-                <p>
-                    Nosso propósito é proporcionar uma experiência
-                    simples, saborosa e marcante para todos que passam
-                    pela Five's Burger.
-                </p>
-
+                <a class="scroll-indicator" href="#nossa-historia" aria-label="Conheça nossa história">
+                    <span>Conheça nossa história</span>
+                    <span class="scroll-arrow">↓</span>
+                </a>
             </div>
 
+            <div class="hero-brand reveal reveal-delay">
+                <div class="brand-glow"></div>
 
-            <div class="sobre-destaque">
-
-                <div class="sobre-card">
-
-                    <h2>
-                        Five's Burger
-                    </h2>
-
-                    <p>
-                        Sabor, qualidade e dedicação em cada pedido.
-                    </p>
-
+                <div class="facade-card">
+                    <div class="facade-top"></div>
+                    <div class="facade-sign">
+                        <img src="../assets/PlacaFivesBurger.png" alt="Logo da Five's Burger na fachada">
+                    </div>
+                    <div class="facade-bottom">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
 
+                <div class="brand-caption">
+                    <span class="caption-line"></span>
+                    <span>FIVE'S BURGER</span>
+                    <span class="caption-line"></span>
+                </div>
             </div>
-
         </section>
 
-
-        <section class="sobre-info">
-
-            <div class="info-card">
-
-                <h2>
-                    🍔 Nossa história
-                </h2>
-
-                <p>
-                    A Five's Burger foi criada pensando em quem gosta
-                    de um bom hambúrguer e valoriza uma experiência
-                    diferenciada.
-                </p>
-
+        <!-- HISTÓRIA -->
+        <section id="nossa-historia" class="story-section section">
+            <div class="section-heading reveal">
+                <span class="eyebrow">NOSSA HISTÓRIA</span>
+                <h2>Uma ideia simples.<br><span>Uma experiência especial.</span></h2>
             </div>
 
+            <div class="story-grid">
+                <div class="story-copy reveal">
+                    <div class="number">01</div>
+                    <h3>Onde tudo começa</h3>
+                    <p>
+                        A Five's Burger nasceu com uma proposta clara: oferecer
+                        hambúrgueres saborosos, com identidade e atenção aos
+                        detalhes. A ideia é valorizar aquilo que realmente faz
+                        diferença em uma boa experiência: um produto bem
+                        preparado e um atendimento que faça o cliente se sentir
+                        bem-vindo.
+                    </p>
+                    <p>
+                        Cada elemento da Five's Burger foi pensado para transmitir
+                        uma personalidade marcante, desde a identidade visual
+                        até a forma de apresentar nossos produtos.
+                    </p>
+                </div>
 
-            <div class="info-card">
+                <div class="story-visual reveal reveal-delay">
+                    <div class="visual-ring"></div>
+                    <div class="visual-logo">
+                        <img src="../assets/FivesBurgerArosNeon.png" alt="Five's Burger">
+                    </div>
+                    <span class="visual-tag">SABOR • IDENTIDADE • CUIDADO</span>
+                </div>
+            </div>
+        </section>
 
-                <h2>
-                    ⭐ Nossa missão
-                </h2>
-
+        <!-- FILOSOFIA -->
+        <section class="philosophy-section section">
+            <div class="section-heading centered reveal">
+                <span class="eyebrow">NOSSO JEITO DE FAZER</span>
+                <h2>O que está por trás<br><span>de cada pedido.</span></h2>
                 <p>
-                    Oferecer produtos de qualidade, bom atendimento e
-                    uma experiência que faça nossos clientes quererem
-                    voltar.
+                    Uma experiência marcante é construída nos detalhes.
+                    Por isso, nossos valores fazem parte de tudo o que
+                    buscamos entregar.
                 </p>
-
             </div>
 
+            <div class="values-grid">
+                <article class="value-card reveal">
+                    <div class="value-icon">01</div>
+                    <div>
+                        <span class="value-label">QUALIDADE</span>
+                        <h3>Cuidado em cada detalhe</h3>
+                        <p>
+                            Do preparo à apresentação, valorizamos uma experiência
+                            feita com atenção e dedicação.
+                        </p>
+                    </div>
+                </article>
 
-            <div class="info-card">
+                <article class="value-card reveal reveal-delay">
+                    <div class="value-icon">02</div>
+                    <div>
+                        <span class="value-label">SABOR</span>
+                        <h3>O protagonista é o hambúrguer</h3>
+                        <p>
+                            Buscamos uma combinação equilibrada e saborosa para
+                            fazer cada mordida valer a pena.
+                        </p>
+                    </div>
+                </article>
 
-                <h2>
-                    ❤️ Nosso propósito
-                </h2>
+                <article class="value-card reveal">
+                    <div class="value-icon">03</div>
+                    <div>
+                        <span class="value-label">EXPERIÊNCIA</span>
+                        <h3>Feito para ser lembrado</h3>
+                        <p>
+                            Queremos que a visita à Five's Burger seja mais do
+                            que uma refeição: seja um momento gostoso.
+                        </p>
+                    </div>
+                </article>
 
+                <article class="value-card reveal reveal-delay">
+                    <div class="value-icon">04</div>
+                    <div>
+                        <span class="value-label">IDENTIDADE</span>
+                        <h3>Uma marca com personalidade</h3>
+                        <p>
+                            Nossa identidade une o clássico do burger com uma
+                            presença visual forte, moderna e autêntica.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- MISSÃO / PROPÓSITO -->
+        <section class="mission-section section">
+            <div class="mission-card reveal">
+                <div class="mission-decoration"></div>
+
+                <div class="mission-content">
+                    <span class="eyebrow">NOSSA MISSÃO</span>
+                    <h2>Fazer parte dos<br><span>bons momentos.</span></h2>
+
+                    <p>
+                        Queremos entregar mais do que um produto. Nossa missão
+                        é proporcionar uma experiência saborosa, acolhedora e
+                        consistente, capaz de transformar uma refeição comum
+                        em um momento que dê vontade de repetir.
+                    </p>
+
+                    <div class="signature">
+                        <span class="signature-line"></span>
+                        <strong>Five's Burger</strong>
+                        <small>Sabor, identidade e dedicação.</small>
+                    </div>
+                </div>
+
+                <div class="mission-side">
+                    <div class="quote-mark">“</div>
+                    <p>
+                        Uma boa experiência começa pelo sabor,
+                        mas fica na memória pelos detalhes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAL -->
+        <section class="difference-section section">
+            <div class="difference-content reveal">
+                <span class="eyebrow">POR QUE FIVE'S?</span>
+                <h2>Personalidade no prato.<br><span>Experiência na memória.</span></h2>
                 <p>
-                    Fazer parte dos bons momentos dos nossos clientes
-                    através de comida boa e feita com dedicação.
+                    Em um mercado cheio de opções, acreditamos que ter identidade
+                    é essencial. A Five's Burger busca construir sua própria
+                    experiência, combinando uma comunicação visual marcante
+                    com produtos pensados para quem valoriza um bom burger.
                 </p>
 
+                <a href="../cardapio/cardapio.html" class="about-button">
+                    <span>Conheça o cardápio</span>
+                    <span>→</span>
+                </a>
             </div>
 
+            <div class="difference-mark reveal reveal-delay">
+                <span>F</span>
+                <span>I</span>
+                <span>V</span>
+                <span>E</span>
+                <span>S</span>
+            </div>
         </section>
 
     </main>
 
+    <footer></footer>
 
-    <footer>
-
-    </footer>
-
+    <script src="sobre.js"></script>
 </body>
-
 </html>
