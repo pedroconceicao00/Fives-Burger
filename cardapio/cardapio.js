@@ -7,45 +7,99 @@ const overlay = document.querySelector('#overlay');
 const headerNav = document.querySelector('header nav');
 const fecharMenuBtn = document.querySelector('.fechar-menu');
 
-// ===== CARREGAR PRODUTOS =====
-async function carregarProdutos(){
-    try{
+// Guarda os dados carregados da API/JSON para evitar múltiplos fetches
+let cardapioDados = null;
+
+// Cria o elemento HTML de um item (reaproveitado para qualquer categoria)
+function criarCardProduto(item, tipoClasse) {
+    const card = document.createElement('div');
+    card.classList.add(tipoClasse);
+
+    const imagem = document.createElement('img');
+    imagem.src = item.imagem;
+    imagem.alt = item.nome;
+
+    const nome = document.createElement('h2');
+    nome.textContent = item.nome;
+
+    const preco = document.createElement('p');
+    preco.classList.add('preco');
+    preco.textContent = `R$ ${item.preco.toFixed(2).replace('.', ',')}`;
+
+    const descricao = document.createElement('p');
+    descricao.classList.add('descricao');
+    descricao.textContent = item.descricao;
+
+    card.appendChild(imagem);
+    card.appendChild(nome);
+    card.appendChild(preco);
+    card.appendChild(descricao);
+
+    return card;
+}
+
+// Filtra e exibe os itens na tela
+function renderizarCategoria(categoria) {
+    if (!cardapioDados) return;
+
+    // Limpa a tela antes de renderizar os novos itens
+    containerProdutos.innerHTML = '';
+
+    const itensParaExibir = [];
+
+    // Normaliza o nome da categoria
+    const cat = categoria.trim().toLowerCase();
+
+    if (cat === 'todos') {
+        if (cardapioDados.lanches) {
+            cardapioDados.lanches.forEach(l => itensParaExibir.push({ ...l, classe: 'lanche' }));
+        }
+        if (cardapioDados.bebidas) {
+            cardapioDados.bebidas.forEach(b => itensParaExibir.push({ ...b, classe: 'bebida' }));
+        }
+    } else if (cat === 'lanches') {
+        // Exibe os lanches ao clicar em Combos
+        if (cardapioDados.lanches) {
+            cardapioDados.lanches.forEach(l => itensParaExibir.push({ ...l, classe: 'lanche' }));
+        }
+    } else if (cat === 'bebidas') {
+        if (cardapioDados.bebidas) {
+            cardapioDados.bebidas.forEach(b => itensParaExibir.push({ ...b, classe: 'bebida' }));
+        }
+    }
+
+    // Se houver outras categorias no JSON no futuro (ex: porções, sobremesas):
+    else if (cardapioDados[cat]) {
+        cardapioDados[cat].forEach(item => itensParaExibir.push({ ...item, classe: cat }));
+    }
+
+    // Monta os cards na tela
+    if (itensParaExibir.length === 0) {
+        containerProdutos.innerHTML = '<p class="sem-produtos">Nenhum produto encontrado nesta categoria.</p>';
+        return;
+    }
+
+    itensParaExibir.forEach(item => {
+        const card = criarCardProduto(item, item.classe);
+        containerProdutos.appendChild(card);
+    });
+}
+
+// Carrega os dados do JSON inicial
+async function carregarDadosIniciais() {
+    try {
         const resposta = await fetch("lanches.json");
 
         if (!resposta.ok) {
-            throw new Error(`Não possível carregar as informações. Erro: ${resposta.status}`);
+            throw new Error(`Erro HTTP: ${resposta.status}`);
         }
 
-        const dados = await resposta.json();
-
-        dados.lanches.forEach(lanche => {
-            const cardLanche = document.createElement('div');
-            cardLanche.classList.add('lanche');
-
-            const nomeLanche = document.createElement('h2');
-            nomeLanche.textContent = lanche.nome;
-
-            const imagemLanche = document.createElement('img');
-            imagemLanche.src = lanche.imagem;
-            imagemLanche.alt = lanche.nome;
-
-            const precoLanche = document.createElement('p');
-            precoLanche.classList.add('preco');
-            precoLanche.textContent = `R$ ${lanche.preco.toFixed(2).replace('.', ',')}`;
-
-            const descricaoLanche = document.createElement('p');
-            descricaoLanche.classList.add('descricao');
-            descricaoLanche.textContent = lanche.descricao;
-
-            cardLanche.appendChild(imagemLanche);
-            cardLanche.appendChild(nomeLanche);
-            cardLanche.appendChild(precoLanche);
-            cardLanche.appendChild(descricaoLanche);
-
-            containerProdutos.appendChild(cardLanche);
-        });
-    } catch(erro){
-        console.log("Erro:", erro);
+        cardapioDados = await resposta.json();
+        
+        // Exibe todos por padrão ao carregar a página
+        renderizarCategoria('todos');
+    } catch (erro) {
+        console.error("Erro ao carregar dados:", erro);
         containerProdutos.innerHTML = "<p>Erro ao carregar os produtos.</p>";
     }
 }
@@ -61,12 +115,9 @@ menuToggle.addEventListener('click', () => {
 menuExpand.addEventListener('click', () => {
     menuCard.classList.add('aberto');
     overlay.classList.add('visivel');
-    
-    // Impede rolagem da página quando o menu está aberto
     document.body.style.overflow = 'hidden';
 });
 
-// Fecha o drawer ao clicar no X ou no overlay
 function fecharMenuLateral() {
     menuCard.classList.remove('aberto');
     overlay.classList.remove('visivel');
@@ -76,20 +127,23 @@ function fecharMenuLateral() {
 fecharMenuBtn.addEventListener('click', fecharMenuLateral);
 overlay.addEventListener('click', fecharMenuLateral);
 
-// Fecha ao clicar em uma categoria também (opcional, melhora UX)
+// ===== CLIQUE NAS CATEGORIAS =====
 document.querySelectorAll('.selectionMenu:not(.fechar-menu)').forEach(item => {
     item.addEventListener('click', () => {
-        // Remove ativo de todos
+        // Atualiza a classe ativa
         document.querySelectorAll('.selectionMenu').forEach(i => i.classList.remove('ativo'));
-        // Adiciona no clicado
         item.classList.add('ativo');
-        
-        // Fecha o menu no mobile
+
+        // Pega o texto da categoria clicada e renderiza os produtos
+        const categoriaNome = item.textContent.trim();
+        renderizarCategoria(categoriaNome);
+
+        // Fecha o menu lateral no mobile
         if (window.innerWidth <= 700) {
             fecharMenuLateral();
         }
     });
 });
 
-// Inicializa
-carregarProdutos();
+// Inicialização
+carregarDadosIniciais();

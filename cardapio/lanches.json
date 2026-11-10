@@ -1,5 +1,5 @@
 {
-    "lanches": [
+        "lanches": [
         {
             "id": 1,
             "nome": "Five Classic",
@@ -43,5 +43,35 @@
                 "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/Gemini_Generated_Image_3q48e23q48e23q48.jpg"
         }
 
+        ],
+        "bebidas":[
+                {
+                        "id":1,
+                        "nome":"Coca - Cola Lata",
+                        "descricao":"Refrigerante de cola",
+                        "preco":4.99,
+                        "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/coca.jpg" 
+                },
+                {
+                        "id":2,
+                        "nome":"Sprite Lata",
+                        "descricao":"Refrigerante de limão",
+                        "preco":4.99,
+                        "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/download.jpg"
+                },
+                {
+                        "id":3,
+                        "nome":"Fanta Lata",
+                        "descricao":"Refrigerante nos sabores: Laranja, Uva e Guaraná",
+                        "preco":4.99,
+                        "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/fanta.jpg"
+                },
+                {
+                        "id":4,
+                        "nome":"Suco Laranja",
+                        "descricao":"Suco Natural de Laranja",
+                        "preco":4.99,
+                        "imagem": "https://pub-ab25a409953946b98f822bb1fac8b234.r2.dev/ImagensFiveBurgers/suco.jpg"
+                }
         ]
 }
