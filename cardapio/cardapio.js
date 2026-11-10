@@ -55,7 +55,7 @@ function renderizarCategoria(categoria) {
             cardapioDados.lanches.forEach(l => itensParaExibir.push({ ...l, classe: 'lanche' }));
         }
         if (cardapioDados.bebidas) {
-            cardapioDados.bebidas.forEach(b => itensParaExibir.push({ ...b, classe: 'bebida' }));
+            cardapioDados.bebidas.forEach(b => itensParaExibir.push({ ...b, classe: 'lanche' }));
         }
     } else if (cat === 'lanches') {
         // Exibe os lanches ao clicar em Combos
@@ -64,7 +64,7 @@ function renderizarCategoria(categoria) {
         }
     } else if (cat === 'bebidas') {
         if (cardapioDados.bebidas) {
-            cardapioDados.bebidas.forEach(b => itensParaExibir.push({ ...b, classe: 'bebida' }));
+            cardapioDados.bebidas.forEach(b => itensParaExibir.push({ ...b, classe: 'lanche' }));
         }
     }
 
