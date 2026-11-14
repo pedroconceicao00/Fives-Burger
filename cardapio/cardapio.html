@@ -26,7 +26,6 @@
   <body>
     <header>
       <nav>
-        <!-- Logo -->
         <a href="/index.html">
           <img
             src="/assets/Fives-Burger-Logo.png"
@@ -34,8 +33,6 @@
             width="120"
           />
         </a>
-
-        <!-- Botão hambúrguer do topo (só aparece no mobile) -->
         <button
           class="menu-toggle"
           aria-label="Abrir menu de navegação"
@@ -45,8 +42,6 @@
           <span></span>
           <span></span>
         </button>
-
-        <!-- Menu principal - vira carrossel no mobile -->
         <ul class="nav-links">
           <li id="inicio"><a href="../index.html">Início</a></li>
           <li id="navCardapio">
@@ -61,12 +56,9 @@
     </header>
 
     <main id="cardapio">
-      <!-- Botão para abrir/fechar categorias (só mobile) -->
       <button id="menuExpand" aria-expanded="false" aria-controls="menuCard">
         <span class="icon">☰</span> Categorias
       </button>
-
-      <!-- Menu lateral de categorias (oculto no mobile) -->
       <aside id="menuCard">
         <div class="selectionMenu fechar-menu">✕ Fechar</div>
         <div class="selectionMenu ativo">Todos</div>
@@ -75,8 +67,6 @@
         <div class="selectionMenu">Bebidas</div>
         <div class="selectionMenu">Sobremesa</div>
       </aside>
-
-      <!-- Grade de produtos -->
       <div id="produtos"></div>
     </main>
 
