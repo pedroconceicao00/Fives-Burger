@@ -1,41 +1,53 @@
+
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five's Burger</title>
 
     <link rel="shortcut icon" href="/assets/Favicon64x64.png" type="image/x-icon">
-    <link rel="stylesheet" href="/index/stylesIndex.css" >
+    <link rel="stylesheet" href="/index/stylesIndex.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <header>
       <nav>
         <a href="/index.html">
           <img
-          src="assets/Fives-Burger-Logo.png"
-          alt="Five's Burger Logo"
-          width="120"
-        >
+            src="assets/Fives-Burger-Logo.png"
+            alt="Five's Burger Logo"
+            width="120"
+          >
         </a>
-        
+
         <ul>
           <li id="inicio">
             <a href="index.html" style="color: var(--color-primary)">Início</a>
           </li>
-          <li id="cardapio"><a href="cardapio/cardapio.html">Cardápio</a></li>
-          <li id="sobre"><a href="sobre/sobre.html">Sobre</a></li>
-          <li id="contato"><a href="contato/contato.html">Contato</a></li>
+
+          <li id="cardapio">
+            <a href="cardapio/cardapio.html">Cardápio</a>
+          </li>
+
+          <li id="sobre">
+            <a href="sobre/sobre.html">Sobre</a>
+          </li>
+
+          <li id="contato">
+            <a href="contato/contato.html">Contato</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
+
+      <!-- HERO -->
       <div class="hero">
         <div class="texto-principal">
           <h1>O Hambúrger que você <span class="destaque"><br>Merece!</span></h1>
@@ -50,9 +62,14 @@
           </a>
         </div>
 
-        <img src="/assets/HeroHamburger1536x1024.png" alt="Hambúrguer" width="500">
+        <img
+          src="/assets/HeroHamburger1536x1024.png"
+          alt="Hambúrguer"
+          width="500"
+        >
       </div>
 
+      <!-- PRODUTOS EM DESTAQUE -->
       <section>
         <div class="titulo-produtos">
           <div class="titulo-produtos-texto">
@@ -62,111 +79,126 @@
         </div>
 
         <div class="produtos-destaque">
+
+          <!-- FIVE CLASSIC -->
           <div class="produto">
             <img
-              src="assets/ProdutosImagens/cheese-burger01.png"
-              alt="Chesse Búrguer"
+              src="https://imagefive.cdbsdev.com.br/ImagensFiveBurgers/FiveClassic.jpg"
+              alt="Five Classic"
               width="100"
             >
-            <h2>X-Búrguer Clássico</h2>
-            <p>Delicioso hambúrguer com queijo, alface e tomate.</p>
+
+            <h2>Five Classic</h2>
+
+            <p>
+              Pão, hambúrguer de carne, queijo, alface, tomate, cebola, picles e molho especial.
+            </p>
 
             <div class="produto-footer">
-              <p>R$ 15,90</p>
-              <a href="/cardapio/cardapio.html" class="cart-add">
-                <i data-lucide="plus" class="cart-add-icon"></i>
-              </a>
-            </div>
+              <p>R$ 24,99</p>
 
-          </div>
-
-          <div class="produto">
-            <img
-              src="assets/ProdutosImagens/coca-cola-bottle.webp"
-              alt="Coca-Cola"
-              width="100"
-          >
-            <h2>Coca-Cola</h2>
-            <p>Refrigerante de cola, ideal para acompanhar seu hambúrguer.</p>
-
-            <div class="produto-footer">
-              <p>R$ 4,90</p>
               <a href="/cardapio/cardapio.html" class="cart-add">
                 <i data-lucide="plus" class="cart-add-icon"></i>
               </a>
             </div>
           </div>
 
+          <!-- FIVE BACON -->
           <div class="produto">
             <img
-              src="assets/ProdutosImagens/cheese-burger01.png"
-              alt="Chesse Búrguer"
+              src="https://imagefive.cdbsdev.com.br/ImagensFiveBurgers/FiveBacon.jpg"
+              alt="Five Bacon"
               width="100"
             >
-            <h2>X-Búrguer Clássico</h2>
-            <p>Delicioso hambúrguer com queijo, alface e tomate.</p>
+
+            <h2>Five Bacon</h2>
+
+            <p>
+              Pão, hambúrguer de carne, queijo, bacon, alface, tomate e cebola.
+            </p>
 
             <div class="produto-footer">
-              <p>R$ 15,90</p>
+              <p>R$ 20,99</p>
+
               <a href="/cardapio/cardapio.html" class="cart-add">
                 <i data-lucide="plus" class="cart-add-icon"></i>
               </a>
             </div>
           </div>
 
+          <!-- FIVE CHICKEN -->
           <div class="produto">
             <img
-              src="assets/ProdutosImagens/cheese-burger01.png"
-              alt="Chesse Búrguer"
+              src="https://imagefive.cdbsdev.com.br/ImagensFiveBurgers/FiveChicken.jpg"
+              alt="Five Chicken"
               width="100"
             >
-            <h2>X-Búrguer Clássico</h2>
-            <p>Delicioso hambúrguer com queijo, alface e tomate.</p>
+
+            <h2>Five Chicken</h2>
+
+            <p>
+              Pão, frango, queijo, alface, tomate, cebola e molho especial.
+            </p>
 
             <div class="produto-footer">
-              <p>R$ 15,90</p>
+              <p>R$ 18,99</p>
+
               <a href="/cardapio/cardapio.html" class="cart-add">
                 <i data-lucide="plus" class="cart-add-icon"></i>
               </a>
             </div>
           </div>
 
+          <!-- MILK-SHAKE -->
           <div class="produto">
             <img
-              src="assets/ProdutosImagens/cheese-burger01.png"
-              alt="Chesse Búrguer"
+              src="https://imagefive.cdbsdev.com.br/ImagensFiveBurgers/MilkShake.jpg"
+              alt="Milk-Shake"
               width="100"
             >
-            <h2>X-Búrguer Clássico</h2>
-            <p>Delicioso hambúrguer com queijo, alface e tomate.</p>
+
+            <h2>Milk-Shake</h2>
+
+            <p>
+              Bebida cremosa de sorvete, disponível nos sabores morango, chocolate e baunilha.
+            </p>
 
             <div class="produto-footer">
-              <p>R$ 15,90</p>
+              <p>R$ 10,99</p>
+
               <a href="/cardapio/cardapio.html" class="cart-add">
                 <i data-lucide="plus" class="cart-add-icon"></i>
               </a>
             </div>
           </div>
 
+          <!-- BROWNIE -->
           <div class="produto">
             <img
-              src="assets/ProdutosImagens/coca-cola-bottle.webp"
-              alt="Coca-Cola"
+              src="https://imagefive.cdbsdev.com.br/ImagensFiveBurgers/Brownie.jpg"
+              alt="Brownie"
               width="100"
             >
-            <h2>Coca-Cola</h2>
-            <p>Refrigerante de cola, ideal para acompanhar seu hambúrguer.</p>
+
+            <h2>Brownie</h2>
+
+            <p>
+              Brownie com sorvete de baunilha.
+            </p>
 
             <div class="produto-footer">
-              <p>R$ 4,90</p>
+              <p>R$ 10,00</p>
+
               <a href="/cardapio/cardapio.html" class="cart-add">
                 <i data-lucide="plus" class="cart-add-icon"></i>
               </a>
             </div>
           </div>
+
         </div>
       </section>
 
+      <!-- DIFERENCIAIS -->
       <section class="diferenciais">
         <div class="titulo-diferenciais">
           <p>Por que escolher a Five's Burger?</p>
@@ -174,66 +206,109 @@
         </div>
 
         <div class="diferenciais-container">
+
           <article class="diferencial">
-              <i data-lucide="flame" class="diferencial-icon"></i>
+            <i data-lucide="flame" class="diferencial-icon"></i>
 
-              <h3>Receitas Artesanais</h3>
+            <h3>Receitas Artesanais</h3>
 
-              <p>
-                  Feitas com ingredientes selecionados.
-              </p>
+            <p>
+              Feitas com ingredientes selecionados.
+            </p>
           </article>
 
           <article class="diferencial">
-              <i data-lucide="clock" class="diferencial-icon"></i>
+            <i data-lucide="clock" class="diferencial-icon"></i>
 
-              <h3>Grelhado na hora</h3>
+            <h3>Grelhado na hora</h3>
 
-              <p>
-                  Mais sabor e suculência em cada mordida.
-              </p>
+            <p>
+              Mais sabor e suculência em cada mordida.
+            </p>
           </article>
 
           <article class="diferencial">
-              <i data-lucide="leaf" class="diferencial-icon"></i>
+            <i data-lucide="leaf" class="diferencial-icon"></i>
 
-              <h3>Ingredientes frescos</h3>
+            <h3>Ingredientes frescos</h3>
 
-              <p>
-                  Qualidade e cuidado em cada detalhe.
-              </p>
+            <p>
+              Qualidade e cuidado em cada detalhe.
+            </p>
           </article>
 
           <article class="diferencial">
-              <i data-lucide="heart" class="diferencial-icon"></i>
+            <i data-lucide="heart" class="diferencial-icon"></i>
 
-              <h3>Feito com paixão</h3>
+            <h3>Feito com paixão</h3>
 
-              <p>
-                  Porque você merece o melhor.
-              </p>
+            <p>
+              Porque você merece o melhor.
+            </p>
           </article>
+
         </div>
+      </section>
 
-    </section>
+      <!-- CTA -->
+      <section class="cta-section">
+        <p>Bateu a fome?</p>
 
-    <section class="cta-section">
-      <p>Bateu a fome?</p>
-      <h2>Faça seu pedido <span class="destaque">agora!</span></h2>
-      <p>É rápido, fácil e delicioso!</p>
+        <h2>Faça seu pedido <span class="destaque">agora!</span></h2>
 
-      <a href="/cardapio/cardapio.html" class="btn-fazer-pedido">FAZER PEDIDO
-        <i data-lucide="move-right" class="btn-icon"></i>
-      </a>
-    </section>
+        <p>É rápido, fácil e delicioso!</p>
+
+        <a href="/cardapio/cardapio.html" class="btn-fazer-pedido">
+          FAZER PEDIDO
+          <i data-lucide="move-right" class="btn-icon"></i>
+        </a>
+      </section>
 
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+
+        <!-- IDENTIDADE -->
+        <div class="footer-brand">
+          <a href="/index.html">
+            <img
+              src="/assets/Fives-Burger-Logo.png"
+              alt="Five's Burger"
+            >
+          </a>
+
+          <p>
+            Hambúrgueres artesanais, preparados com ingredientes selecionados
+            para proporcionar uma experiência deliciosa.
+          </p>
+        </div>
+
+        <!-- NAVEGAÇÃO -->
+        <div class="footer-links">
+          <h3>Navegação</h3>
+
+          <a href="/index.html">Início</a>
+          <a href="/cardapio/cardapio.html">Cardápio</a>
+          <a href="/sobre/sobre.html">Sobre</a>
+          <a href="/contato/contato.html">Contato</a>
+        </div>
+
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Five's Burger. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <script>
-        lucide.createIcons();
+      lucide.createIcons();
     </script>
+
   </body>
 </html>

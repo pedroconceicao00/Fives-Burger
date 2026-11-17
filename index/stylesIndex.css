@@ -321,12 +321,22 @@ header nav ul li a:hover::after {
     font-weight: 400;
 
     line-height: 1.4;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+
+    overflow: hidden;
 }
 
 .produto img {
     width: clamp(50px, 20vw, 150px);
 
-    object-fit: contain;
+    object-fit: cover;
+
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
 
     transition: 0.3s ease;
 }
@@ -540,6 +550,126 @@ header nav ul li a:hover::after {
     color: var(--color-primary);  
 }
 
+/*FOOTER========================= */
+
+footer {
+    background: linear-gradient(
+        180deg,
+        #181818,
+        #0a0a0a
+    );
+
+    border-top: 1px solid rgba(255, 138, 0, 0.2);
+
+    padding: 50px 8% 20px;
+}
+
+/* CONTAINER PRINCIPAL */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 40px;
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding-bottom: 35px;
+}
+
+/* IDENTIDADE */
+
+.footer-brand {
+    max-width: 350px;
+}
+
+.footer-brand img {
+    width: 130px;
+    height: auto;
+
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: var(--color-text-muted);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* LINKS */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer-links h3 {
+    color: var(--color-primary);
+
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: var(--color-text-muted);
+
+    font-size: 14px;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+    transform: translateX(4px);
+}
+
+/* COPYRIGHT */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    padding-top: 20px;
+
+    color: var(--color-text-muted);
+
+    font-size: 12px;
+}
+
+.footer-bottom span {
+    color: var(--color-primary);
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+}
 
 
 /* ===== SCROLLBAR - FIVE'S BURGER ===== */
