@@ -22,14 +22,25 @@
     <header>
         <nav>
             <a href="/index.html">
-          <img
-          src="/assets/Fives-Burger-Logo.png"
-          alt="Five's Burger Logo"
-          width="120"
-        >
-        </a>
+                <img
+                    src="/assets/Fives-Burger-Logo.png"
+                    alt="Five's Burger Logo"
+                    width="120"
+                    class="logo"
+                >
+            </a>
 
-            <ul>
+            <button
+                class="menu-toggle"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
                 <li id="inicio"><a href="../index.html">Início</a></li>
                 <li id="cardapio"><a href="../cardapio/cardapio.html">Cardápio</a></li>
                 <li id="sobre"><a href="sobre.html" style="color: var(--color-primary);">Sobre</a></li>

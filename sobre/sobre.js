@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    const headerNav = document.querySelector("header nav");
+
+    if (menuToggle && navLinks && headerNav) {
+        menuToggle.addEventListener("click", () => {
+            const estaAberto = navLinks.classList.toggle("aberto");
+            headerNav.classList.toggle("menu-aberto");
+            menuToggle.setAttribute("aria-expanded", estaAberto);
+        });
+    }
+
     const elements = document.querySelectorAll(".reveal");
 
     if (!("IntersectionObserver" in window)) {

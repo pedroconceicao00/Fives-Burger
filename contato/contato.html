@@ -19,13 +19,25 @@
     <header>
         <nav>
             <a href="/index.html">
-          <img
-          src="/assets/Fives-Burger-Logo.png"
-          alt="Five's Burger Logo"
-          width="120"
-        >
-        </a>
-            <ul>
+                <img
+                    src="/assets/Fives-Burger-Logo.png"
+                    alt="Five's Burger Logo"
+                    width="120"
+                    class="logo"
+                >
+            </a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
                 <li id="inicio"><a href="../index.html">Início</a></li>
                 <li id="cardapio"><a href="/cardapio/cardapio.html">Cardápio</a></li>
                 <li id="sobre"><a href="../sobre/sobre.html">Sobre</a></li>
@@ -35,16 +47,7 @@
     </header>
 
     <main>
-        
-    </main>
-    
-    <footer>
-        
-    </footer>
-</body>
-
-
- <section class="contact-section" id="contato">
+        <section class="contact-section">
   <div class="contact-container">
 
     <!-- TEXTO -->
@@ -142,4 +145,23 @@
     </div>
 
   </div>
-</section>  
+</section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const headerNav = document.querySelector('header nav');
+
+        if (menuToggle && navLinks && headerNav) {
+            menuToggle.addEventListener('click', () => {
+                const estaAberto = navLinks.classList.toggle('aberto');
+                headerNav.classList.toggle('menu-aberto');
+                menuToggle.setAttribute('aria-expanded', estaAberto);
+            });
+        }
+    </script>
+</body>
+</html>

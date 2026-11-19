@@ -22,10 +22,21 @@
             src="assets/Fives-Burger-Logo.png"
             alt="Five's Burger Logo"
             width="120"
+            class="logo"
           >
         </a>
 
-        <ul>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
           <li id="inicio">
             <a href="index.html" style="color: var(--color-primary)">Início</a>
           </li>
@@ -308,6 +319,18 @@
 
     <script>
       lucide.createIcons();
+
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      const headerNav = document.querySelector('header nav');
+
+      if (menuToggle && navLinks && headerNav) {
+        menuToggle.addEventListener('click', () => {
+          const estaAberto = navLinks.classList.toggle('aberto');
+          headerNav.classList.toggle('menu-aberto');
+          menuToggle.setAttribute('aria-expanded', estaAberto);
+        });
+      }
     </script>
 
   </body>
